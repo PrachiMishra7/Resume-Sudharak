@@ -15,7 +15,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # Constants
-DEFAULT_MODEL = "command-r-plus"
+DEFAULT_MODEL = "command-a-03-2025"
 MAX_RETRIES = 3
 RETRY_DELAY = 10  # seconds
 
@@ -69,3 +69,4 @@ def analyze_resume_with_llm(
     
 
     raise Exception("Failed to analyze resume after multiple attempts.")
+

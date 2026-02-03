@@ -39,7 +39,7 @@ def configure_api_key():
     if api_key:
         try:
             co = cohere.Client(api_key)
-            _ = co.chat(message="Hello", model="command-r-mini")
+            _ = co.chat(message="Hello", model="command-nightly")
             st.session_state.api_key_configured = True
             st.session_state.cohere_client = co
             st.sidebar.success("✅ API key validated!")
@@ -164,5 +164,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
